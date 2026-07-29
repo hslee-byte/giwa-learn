@@ -24,6 +24,9 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
+      - name: Compile production artifacts
+        run: pnpm exec hardhat --build-profile production compile
+
       - name: Verify on GIWA Sepolia Blockscout
         run: >-
           pnpm exec hardhat
