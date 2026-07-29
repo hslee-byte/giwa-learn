@@ -59,6 +59,8 @@ PRIVATE_KEY=0x...
 
 - 웹: [giwa-learn-gasok.vercel.app](https://giwa-learn-gasok.vercel.app)
 - 공개 저장소: [github.com/hslee-byte/giwa-learn](https://github.com/hslee-byte/giwa-learn)
+- 90초 데모: [GIWA-Learn-90s-Demo.mp4](https://github.com/hslee-byte/giwa-learn/releases/download/gasok-submission/GIWA-Learn-90s-Demo.mp4)
+- 피치덱: [GIWA-Learn-GASOK-Pitch-Deck.pdf](https://github.com/hslee-byte/giwa-learn/releases/download/gasok-submission/GIWA-Learn-GASOK-Pitch-Deck.pdf)
 - 보상 컨트랙트: [`0x22ac…C9Ca`](https://sepolia-explorer.giwa.io/address/0x22acb03CaB80Caaff541B39b1eEeBF374E02C9Ca#code)
 - gLEARN 토큰: [`0x2082…6327`](https://sepolia-explorer.giwa.io/address/0x2082d1242Bac97553eaa1C5CDeD0987587c56327#code)
 - 실제 `10 gLEARN` 청구: [`0xf143…f1de`](https://sepolia-explorer.giwa.io/tx/0xf143b3d6242532d77c7f37fa66b51f28314b167fc521b8910552c48202abf1de)

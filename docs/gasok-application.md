@@ -5,8 +5,10 @@
 - 프로젝트명: **GIWA Learn**
 - 주 트랙: **Track 03 — GIWA-Native Ideas**
 - 보조 트랙: **Track 05 — Mass Adoption**
-- 한 문장: **클릭을 보상하는 에어드랍을, 핵심 학습을 통과한 검증 지갑의 첫 GIWA 온체인 행동으로 전환합니다.**
+- 한 문장: **검증 지갑의 학습을 첫 GIWA 온체인 행동으로 바꿉니다.**
 - 운영 모델: 프로젝트용 셀프서브 SaaS가 아니라 업비트/GIWA 내부 캠페인팀이 직접 품질·예산·공개 상태를 관리하는 전용 인프라
+
+공식 GASOK 안내는 5개 트랙 중복 참여를 허용합니다. 복수 선택 시 Track 03을 주 트랙, Track 05를 보조 트랙으로 제출하고, 폼이 단일 선택만 제공하면 Track 03을 선택합니다.
 
 ## 문제
 
@@ -46,6 +48,13 @@ Dojang을 빼면 검증 사용자 한정 보상이 사라지고, GIWA를 빼면 
 ## 작동하는 MVP
 
 [로그인 없이 체험하는 GIWA Learn 웹 MVP](https://giwa-learn-gasok.vercel.app)
+
+### 제출 링크
+
+- 공개 GitHub: https://github.com/hslee-byte/giwa-learn
+- 90초 데모 영상: https://github.com/hslee-byte/giwa-learn/releases/download/gasok-submission/GIWA-Learn-90s-Demo.mp4
+- 피치덱 PDF: https://github.com/hslee-byte/giwa-learn/releases/download/gasok-submission/GIWA-Learn-GASOK-Pitch-Deck.pdf
+- 기술 문서: https://github.com/hslee-byte/giwa-learn/blob/main/docs/technical-architecture.md
 
 현재 구현된 범위:
 
