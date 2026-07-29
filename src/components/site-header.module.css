@@ -1,0 +1,71 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  width: 100%;
+  height: var(--header-height);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-8);
+  border-bottom: 1px solid var(--border-default);
+  background: rgb(5 5 5 / 92%);
+  backdrop-filter: blur(16px);
+}
+
+.brand,
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.compactMode {
+  display: none;
+}
+
+.brand {
+  gap: var(--space-3);
+  font-family: "Space Grotesk Variable", sans-serif;
+  font-size: var(--type-body-sm);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.mark {
+  display: inline-flex;
+  width: var(--space-8);
+  height: var(--space-8);
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--text-primary);
+  border-radius: 50%;
+}
+
+.nav {
+  gap: var(--space-5);
+  color: var(--text-secondary);
+  font-size: var(--type-body-sm);
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+  color: var(--text-primary);
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 0 var(--space-4);
+  }
+
+  .nav {
+    gap: var(--space-3);
+  }
+
+  .wideMode {
+    display: none;
+  }
+
+  .compactMode {
+    display: inline;
+  }
+}

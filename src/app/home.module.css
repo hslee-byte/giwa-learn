@@ -1,0 +1,282 @@
+.hero,
+.campaign,
+.proof {
+  width: min(100% - var(--space-16), var(--content-max));
+  margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  min-height: 480px;
+  grid-template-columns: 3fr 2fr;
+  align-items: end;
+  gap: var(--space-16);
+  padding: var(--space-16) 0 var(--space-12);
+  border-bottom: 1px solid var(--border-default);
+}
+
+.heroCopy h1 {
+  margin-top: var(--space-5);
+}
+
+.heroAside {
+  padding-bottom: var(--space-3);
+  color: var(--text-secondary);
+  font-size: var(--type-body-lg);
+}
+
+.heroAside > p:first-child {
+  max-width: 520px;
+  margin: 0;
+}
+
+.heroLink {
+  display: inline-flex;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+  padding: 0 var(--space-6);
+  border: 1px solid var(--status-verified);
+  border-radius: var(--radius-sm);
+  color: var(--status-verified);
+  font-weight: 700;
+}
+
+.heroLink:hover,
+.heroLink:focus-visible {
+  background: var(--status-verified);
+  color: var(--text-inverse);
+}
+
+.prototypeNote {
+  margin: var(--space-8) 0 0;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border-default);
+  font-size: var(--type-body-sm);
+}
+
+.campaign {
+  margin-top: var(--space-16);
+  border: 1px solid var(--border-default);
+  background: var(--surface-primary);
+}
+
+.campaignMeta,
+.campaignBody,
+.campaignAction {
+  padding: var(--space-8);
+}
+
+.campaignMeta,
+.campaignAction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.campaignMeta,
+.campaignBody {
+  border-bottom: 1px solid var(--border-default);
+}
+
+.metaRow,
+.metaRow span,
+.campaignAction li,
+.primaryLink {
+  display: flex;
+  align-items: center;
+}
+
+.metaRow {
+  gap: var(--space-6);
+  color: var(--text-secondary);
+  font-size: var(--type-body-sm);
+}
+
+.metaRow span,
+.campaignAction li {
+  gap: var(--space-2);
+}
+
+.campaignBody {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-16);
+}
+
+.campaignBody h2 {
+  margin: 0;
+  font-family: "Space Grotesk Variable", sans-serif;
+  font-size: var(--type-h1);
+  font-weight: 500;
+  line-height: var(--line-heading);
+}
+
+.campaignBody p {
+  max-width: 620px;
+  margin: var(--space-4) 0 0;
+  color: var(--text-secondary);
+}
+
+.reward span,
+.reward small {
+  display: block;
+  color: var(--text-secondary);
+}
+
+.reward strong {
+  display: block;
+  margin: var(--space-2) 0;
+  color: var(--status-verified);
+  font-family: "Space Grotesk Variable", sans-serif;
+  font-size: var(--type-h2);
+  font-weight: 500;
+}
+
+.campaignAction ul {
+  display: flex;
+  gap: var(--space-6);
+  margin: 0;
+  padding: 0;
+  color: var(--text-secondary);
+  font-size: var(--type-body-sm);
+  list-style: none;
+}
+
+.primaryLink {
+  min-height: 52px;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: 0 var(--space-6);
+  border-radius: var(--radius-sm);
+  background: var(--status-verified);
+  color: var(--text-inverse);
+  font-weight: 700;
+}
+
+.proof {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 2fr;
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-20);
+  border-top: 1px solid var(--border-default);
+  border-bottom: 1px solid var(--border-default);
+}
+
+.proof > div,
+.proof > p {
+  min-height: 136px;
+  margin: 0;
+  padding: var(--space-6);
+  border-right: 1px solid var(--border-default);
+}
+
+.proof > p {
+  display: flex;
+  align-items: center;
+  border-right: 0;
+  color: var(--text-secondary);
+}
+
+.proof strong,
+.proof span {
+  display: block;
+}
+
+.proof strong {
+  font-family: "Space Grotesk Variable", sans-serif;
+  font-size: var(--type-h2);
+  font-weight: 500;
+}
+
+.proof span {
+  margin-top: var(--space-3);
+  color: var(--text-secondary);
+  font-size: var(--type-body-sm);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 480px;
+    grid-template-columns: 1fr;
+    align-content: end;
+  }
+
+  .campaignAction,
+  .campaignAction ul {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .proof {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .proof > p {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--border-default);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero,
+  .campaign,
+  .proof {
+    width: calc(100% - var(--space-8));
+  }
+
+  .hero {
+    min-height: 420px;
+    gap: var(--space-8);
+    padding: var(--space-10) 0 var(--space-8);
+  }
+
+  .heroLink {
+    width: 100%;
+  }
+
+  .campaignMeta,
+  .campaignBody,
+  .campaignAction {
+    padding: var(--space-5);
+  }
+
+  .campaignMeta,
+  .campaignBody {
+    grid-template-columns: 1fr;
+  }
+
+  .campaignMeta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .metaRow {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .reward {
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--border-default);
+  }
+
+  .proof {
+    grid-template-columns: 1fr;
+  }
+
+  .proof > div,
+  .proof > p {
+    min-height: 112px;
+    border-right: 0;
+    border-bottom: 1px solid var(--border-default);
+  }
+
+  .proof > p {
+    grid-column: auto;
+  }
+}

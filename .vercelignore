@@ -1,0 +1,7 @@
+.omx
+artifacts
+cache
+coverage
+ignition/deployments
+playwright-report
+test-results

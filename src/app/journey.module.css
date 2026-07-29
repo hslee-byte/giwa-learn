@@ -1,0 +1,397 @@
+.shell {
+  width: min(100% - var(--space-16), var(--content-max));
+  margin: 0 auto;
+  padding: var(--space-10) 0 var(--space-20);
+}
+
+.topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  padding-bottom: var(--space-8);
+  border-bottom: 1px solid var(--border-default);
+}
+
+.backLink {
+  color: var(--text-secondary);
+  font-size: var(--type-body-sm);
+}
+
+.backLink:hover,
+.backLink:focus-visible {
+  color: var(--text-primary);
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: var(--space-16);
+  padding: var(--space-16) 0;
+}
+
+.intro h1 {
+  margin: var(--space-4) 0 0;
+  font-family: "Space Grotesk Variable", sans-serif;
+  font-size: var(--type-h1);
+  font-weight: 500;
+  line-height: var(--line-heading);
+  letter-spacing: -0.04em;
+}
+
+.intro > p {
+  align-self: end;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--type-body-lg);
+}
+
+.lessonGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--border-default);
+  border-left: 1px solid var(--border-default);
+}
+
+.lessonCard {
+  display: flex;
+  min-height: 520px;
+  flex-direction: column;
+  padding: var(--space-8);
+  border-right: 1px solid var(--border-default);
+  border-bottom: 1px solid var(--border-default);
+  background: var(--surface-primary);
+}
+
+.lessonCard h2 {
+  margin: var(--space-6) 0 var(--space-4);
+  font-family: "Space Grotesk Variable", sans-serif;
+  font-size: var(--type-h2);
+  font-weight: 500;
+  line-height: var(--line-heading);
+}
+
+.lessonCard > p:not(.eyebrow) {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.facts {
+  margin: var(--space-6) 0;
+  padding: var(--space-5) 0;
+  border-top: 1px solid var(--border-default);
+  border-bottom: 1px solid var(--border-default);
+  list-style: none;
+}
+
+.facts li {
+  position: relative;
+  padding: var(--space-2) 0 var(--space-2) var(--space-5);
+  font-size: var(--type-body-sm);
+}
+
+.facts li::before {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--status-verified);
+  content: "";
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-top: auto;
+}
+
+.sourceLink {
+  color: var(--text-secondary);
+  font-size: var(--type-label);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footerAction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+  margin-top: var(--space-8);
+  padding: var(--space-6);
+  border: 1px solid var(--border-default);
+  background: var(--surface-primary);
+}
+
+.footerAction p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.ctaLink {
+  display: inline-flex;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: 0 var(--space-6);
+  border-radius: var(--radius-sm);
+  background: var(--status-verified);
+  color: var(--text-inverse);
+  font-weight: 700;
+}
+
+.quizLayout,
+.claimLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: var(--space-10);
+  margin-top: var(--space-12);
+}
+
+.quizCard,
+.claimCard,
+.sidePanel,
+.resultPanel {
+  border: 1px solid var(--border-default);
+  background: var(--surface-primary);
+}
+
+.quizCard,
+.claimCard,
+.resultPanel {
+  padding: var(--space-8);
+}
+
+.questionCount {
+  color: var(--status-verified);
+  font-family: "Space Grotesk Variable", sans-serif;
+  font-size: var(--type-label);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.quizCard h2,
+.claimCard h2,
+.resultPanel h2 {
+  margin: var(--space-5) 0 var(--space-8);
+  font-family: "Space Grotesk Variable", sans-serif;
+  font-size: var(--type-h2);
+  font-weight: 500;
+  line-height: var(--line-heading);
+}
+
+.options {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.quizActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--space-8);
+}
+
+.errorMessage {
+  margin: var(--space-4) 0 0;
+  color: var(--status-error);
+  font-size: var(--type-body-sm);
+}
+
+.sidePanel {
+  align-self: start;
+  padding: var(--space-6);
+}
+
+.sidePanel h2 {
+  margin: 0 0 var(--space-4);
+  font-size: var(--type-body);
+}
+
+.sidePanel p,
+.sidePanel li {
+  color: var(--text-secondary);
+  font-size: var(--type-body-sm);
+}
+
+.sidePanel ul {
+  margin: var(--space-5) 0 0;
+  padding: var(--space-5) 0 0;
+  border-top: 1px solid var(--border-default);
+  list-style: none;
+}
+
+.sidePanel li + li {
+  margin-top: var(--space-3);
+}
+
+.score {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  margin: var(--space-5) 0;
+}
+
+.score strong {
+  color: var(--status-verified);
+  font-family: "Space Grotesk Variable", sans-serif;
+  font-size: var(--type-display);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.score span {
+  color: var(--text-secondary);
+  font-size: var(--type-h3);
+}
+
+.walletBox {
+  padding: var(--space-6);
+  border: 1px solid var(--border-default);
+  background: var(--surface-elevated);
+}
+
+.walletHeader,
+.walletActions,
+.transactionRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.walletHeader h3 {
+  margin: 0;
+  font-size: var(--type-body);
+}
+
+.walletBox > p {
+  margin: var(--space-4) 0;
+  color: var(--text-secondary);
+  font-size: var(--type-body-sm);
+}
+
+.walletActions {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.address {
+  margin: var(--space-4) 0 0;
+  font-family: "Space Grotesk Variable", monospace;
+  font-size: var(--type-body-sm);
+  letter-spacing: 0.03em;
+}
+
+.claimAction {
+  margin-top: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border-default);
+}
+
+.claimAction > button {
+  width: 100%;
+}
+
+.transactionRow {
+  margin-top: var(--space-6);
+  padding: var(--space-5);
+  border: 1px solid var(--status-verified);
+  background: var(--status-verified-muted);
+}
+
+.transactionRow strong,
+.transactionRow span {
+  display: block;
+}
+
+.transactionRow span,
+.transactionRow a {
+  color: var(--text-secondary);
+  font-size: var(--type-body-sm);
+}
+
+.protocolList {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.protocolList li {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: var(--space-3);
+}
+
+.protocolList strong,
+.protocolList span {
+  display: block;
+}
+
+.protocolList span {
+  color: var(--text-secondary);
+  font-size: var(--type-label);
+}
+
+@media (max-width: 960px) {
+  .lessonGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .lessonCard {
+    min-height: auto;
+  }
+
+  .quizLayout,
+  .claimLayout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .shell {
+    width: calc(100% - var(--space-8));
+    padding-top: var(--space-6);
+  }
+
+  .topline,
+  .intro,
+  .footerAction {
+    align-items: flex-start;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .intro {
+    gap: var(--space-6);
+    padding: var(--space-10) 0;
+  }
+
+  .lessonCard,
+  .quizCard,
+  .claimCard,
+  .resultPanel {
+    padding: var(--space-5);
+  }
+
+  .walletHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ctaLink,
+  .footerAction > a,
+  .footerAction > button,
+  .quizActions > button {
+    width: 100%;
+  }
+}
