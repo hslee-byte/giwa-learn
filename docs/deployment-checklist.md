@@ -112,7 +112,9 @@ LearnRewardToken 소스 검증: https://sepolia-explorer.giwa.io/address/0x2082d
 2026-07-29 라이브 QA: desktop + mobile 학습·퀴즈·데모 청구, 미검증 지갑 거절,
   검증 지갑 live_ready, 실제 LearningRewardClaimed 이벤트, 중복 청구 revert,
   운영 콘솔 중지·재개 확인
-GiwaLearnRewards 소스 검증: Explorer API 403으로 Standard JSON 수동 업로드 대기
+GiwaLearnRewards 소스 검증: 배포 바이트코드와 production-profile 빌드는 일치.
+  Explorer 검증 POST가 UI·로컬·GitHub Actions에서 모두 HTTP 403을 반환해 미완료.
+  재현 로그: https://github.com/hslee-byte/giwa-learn/actions/runs/30417767362
 GitHub URL: https://github.com/hslee-byte/giwa-learn
 데모 영상 URL: https://github.com/hslee-byte/giwa-learn/releases/download/gasok-submission/GIWA-Learn-90s-Demo.mp4
 피치덱 URL: https://github.com/hslee-byte/giwa-learn/releases/download/gasok-submission/GIWA-Learn-GASOK-Pitch-Deck.pdf

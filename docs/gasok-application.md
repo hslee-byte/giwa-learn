@@ -1,5 +1,81 @@
 # GASOK 신청서 원고 — GIWA Learn
 
+## GASOK 폼 붙여넣기 완성본
+
+### ① 프로젝트명 / 트랙
+
+**GIWA Learn**
+
+- 주 트랙: **Track 03 — GIWA-Native Ideas**
+- 보조 트랙: **Track 05 — Mass Adoption**
+- 폼이 단일 선택만 제공하면 **Track 03**을 선택합니다.
+
+### ② 한 문장
+
+**검증 지갑의 학습을 첫 GIWA 온체인 행동으로 바꿉니다.**
+
+### ③ 문제
+
+기존 프로젝트 퀴즈와 소액 에어드랍은 클릭과 정답 제출은 만들지만, 사용자가 승인된 핵심 내용을 학습했는지, 동일 지갑이 반복 청구하지 않았는지, 참여가 첫 GIWA 트랜잭션으로 이어졌는지는 남기지 못합니다.
+
+### ④ 해결책
+
+GIWA Learn은 `3개 학습 카드 → 서버 채점 퀴즈 → Dojang 검증 → EIP-712 청구 권한 → 온체인 보상`을 하나의 3분 여정으로 묶습니다. 5문항 중 4문항 이상 맞힌 사용자에게만 15분짜리 권한을 발급하고, 컨트랙트가 청구 시점에 검증 상태·서명·기한·중복·예산을 다시 확인한 뒤 10 gLEARN을 지급하고 `LearningRewardClaimed` 이벤트를 남깁니다.
+
+### ⑤ 왜 GIWA
+
+Dojang이 검증 사용자 한정 보상의 신뢰 계층이 되고, GIWA Sepolia가 학습 완료를 첫 온체인 행동으로 바꿉니다. EVM·Solidity·EIP-712로 지급 규칙을 공개 검증할 수 있으며, GIWA 운영팀은 내용·예산·공개·긴급 중지만 승인하고 채점·검증·서명·지급·집계는 자동화합니다. Dojang과 GIWA를 빼면 이 제품의 핵심 루프가 성립하지 않습니다.
+
+### ⑥ 작동 MVP URL
+
+https://giwa-learn-gasok.vercel.app
+
+### ⑦ 온체인 검증 증거
+
+- GiwaLearnRewards 배포·실행: https://sepolia-explorer.giwa.io/address/0x22acb03CaB80Caaff541B39b1eEeBF374E02C9Ca#code
+- 소스 검증된 gLEARN: https://sepolia-explorer.giwa.io/address/0x2082d1242Bac97553eaa1C5CDeD0987587c56327#code
+- 실제 10 gLEARN claim: https://sepolia-explorer.giwa.io/tx/0xf143b3d6242532d77c7f37fa66b51f28314b167fc521b8910552c48202abf1de
+- 공식 Faucet Dojang 발급: https://sepolia-explorer.giwa.io/tx/0x73c67b7fd545ee6c82f66654dd4cb0eac99d31a0704f067da662dba4bd9325a4
+
+GiwaLearnRewards는 배포 바이트코드와 production-profile 빌드가 일치하고 실제 claim·이벤트·중복 거절까지 확인됐습니다. 다만 Explorer의 검증 POST가 UI·로컬·GitHub Actions에서 모두 HTTP 403을 반환해 소스 검증 표시는 아직 대기 상태입니다.
+
+### ⑧ GitHub URL
+
+https://github.com/hslee-byte/giwa-learn
+
+### ⑨ 데모 영상 URL
+
+https://github.com/hslee-byte/giwa-learn/releases/download/gasok-submission/GIWA-Learn-90s-Demo.mp4
+
+### ⑩ 피치덱 링크
+
+https://github.com/hslee-byte/giwa-learn/releases/download/gasok-submission/GIWA-Learn-GASOK-Pitch-Deck.pdf
+
+### ⑪ 기술 문서
+
+- 아키텍처: https://github.com/hslee-byte/giwa-learn/blob/main/docs/technical-architecture.md
+- 배포 체크리스트: https://github.com/hslee-byte/giwa-learn/blob/main/docs/deployment-checklist.md
+- 90초 데모 스크립트: https://github.com/hslee-byte/giwa-learn/blob/main/docs/demo-script-90s.md
+
+### ⑫ 팀 역량
+
+INF CryptoLab은 Web3 클라이언트 15곳 이상, 프로젝트 레퍼런스 80건 이상, KOL 집행 누적 약 550만 달러, 캠페인 참여자 10,000명 이상 운영 경험을 보유합니다. GIWA Learn은 Production Next.js 앱, Solidity 보상 컨트랙트, Hardhat Ignition 배포, Dojang 실검증, 실제 테스트넷 claim, unit·contract·E2E 테스트까지 구현했습니다.
+
+### ⑬ 90일 로드맵
+
+- 0~30일: GIWA Basics 테스트넷 캠페인 운영, 퍼널·오류·부정 청구 검증
+- 31~60일: GIWA 생태계 프로젝트 2곳 파일럿, 콘텐츠 승인 템플릿 정립
+- 61~90일: 운영 콘솔 실데이터 연동, 캠페인 템플릿과 Learning Passport 공개
+
+### ⑭ GASOK 선정 시 요청
+
+- GIWA 내부 운영 스폰서 1명
+- GIWA 기술 리뷰 담당 1명
+- GIWA Basics 테스트 캠페인 보상 예산
+- 90일 파일럿에 참여할 생태계 프로젝트 2곳 연결
+
+---
+
 ## 프로젝트 기본 정보
 
 - 프로젝트명: **GIWA Learn**
